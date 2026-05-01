@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dadmin-labs</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 640px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #58a6ff;
+      border: 1px solid #1f6feb;
+      border-radius: 20px;
+      padding: 4px 14px;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      color: #f0f6fc;
+    }
+
+    h1 span {
+      color: #58a6ff;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #8b949e;
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 18px;
+      border-radius: 6px;
+      transition: opacity 0.15s;
+    }
+
+    .links a:hover { opacity: 0.8; }
+
+    .btn-primary {
+      background: #238636;
+      color: #fff;
+      border: 1px solid #2ea043;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+    }
+
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: #1f6feb;
+      margin: 3rem auto;
+      border-radius: 2px;
+    }
+
+    .status {
+      font-size: 13px;
+      color: #8b949e;
+    }
+
+    .status span {
+      color: #3fb950;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 12px;
+      color: #484f58;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">Homelab &amp; IT Infrastructure</div>
+
+    <h1>Hello World<br>I build things that run.</h1>
+
+    <p>
+      IT professional with a passion for infrastructure, automation, and self-hosted everything.
+      This space is a work in progress — check back as the lab evolves.
+    </p>
+
+    <div class="links">
+      <a href="https://linkedin.com" class="btn-primary">LinkedIn</a>
+      <a href="https://github.com" class="btn-secondary">GitHub</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <p class="status">
+      <span>&#9679;</span> Lab status: online &nbsp;&middot;&nbsp; Proxmox &middot; PBS &middot; OPNsense &middot; Authentik
+    </p>
+  </div>
+
+  <footer>dadmin-labs &mdash; always building</footer>
+</body>
+</html>
